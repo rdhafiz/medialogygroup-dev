@@ -20,77 +20,75 @@
 <body>
 <!--header-->
 <header class="header">
-    <div class="container-lg">
-        <nav class="navbar navbar-expand-lg fixed-top bg-white">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img class="logo" src="assets/img/logo.webp" alt="Medialogy">
-                </a>
-                <div class="d-flex">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                             fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link h6 ms-2 text-dark"
-                                   aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link h6 ms-2 text-dark" href="showreel.html">Showreel</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link h6 ms-2 text-dark  border-bottom border-dark" href="contact-us.html">Contact
-                                    Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <div class="header-wrapper">
+        <a href="javascript:void(0)" class="toggle-menu-btn" onclick="toggleMenu(1)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <a href="index.html" class="logo-wrap">
+            <img class="logo" src="assets/img/logo.webp" alt="Medialogy">
+        </a>
+        <ul class="menu">
+            <li class="each-menu ">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="each-menu">
+                <a href="showreel.html">Showreel</a>
+            </li>
+            <li class="each-menu active">
+                <a href="contact-us.html">Contact Us</a>
+            </li>
+        </ul>
     </div>
 </header>
+<div class="mobile-menu">
+    <ul>
+        <li>
+            <a href="javascript:void(0)">
+                <button onclick="toggleMenu(2)" class="btn p-0 shadow-none"><svg viewBox="0 0 24 24" fill="currentColor" width="40px" height="40px" data-ux="CloseIcon" data-edit-interactive="true" data-close="true" class="x-el x-el-svg c1-1 c1-2 c1-5f c1-2f c1-31 c1-2h c1-2i c1-2j c1-2k c1-23 c1-5g c1-5h c1-4r c1-5i c1-5j c1-5k c1-b c1-2c c1-5l c1-5m c1-5n c1-5o"><path fill-rule="evenodd" d="M19.219 5.22a.75.75 0 0 0-1.061 0l-5.939 5.939-5.939-5.94a.75.75 0 1 0-1.061 1.062l5.939 5.939-5.939 5.939a.752.752 0 0 0 0 1.06.752.752 0 0 0 1.061 0l5.939-5.938 5.939 5.939a.75.75 0 1 0 1.061-1.061l-5.939-5.94 5.939-5.938a.75.75 0 0 0 0-1.061"></path></svg></button>
+            </a>
+        </li>
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="showreel.html">Showreel</a></li>
+        <li class="active"><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+</div>
 <!--/header-->
 <!--main-->
 <main class="main-page contact-us">
     <!--contact-us-->
-    <div class="w-100 py-5">
-        <div class="container">
+    <div class="w-100 ">
+        <div class="each-section">
             <!--title-->
-            <div class="h3 border-bottom pb-2">Contact Us</div>
+            <div class="transform-title">Contact Us</div>
+            <hr>
             <!--/title-->
             <div class="row">
                 <div class="col-md-6">
                     <div class="w-100">
                         <!--form-->
                         <div class="w-100">
-                            <form>
+                            <form class="form-home">
                                 <!--title-->
-                                <div class="h3  mt-4 pb-2">Drop us a line!</div>
+                                <div class="section-des">Drop us a line!</div>
                                 <!--/title-->
-                                <div class="mb-3 mt-4">
-                                    <input type="email" class="form-control form-control-lg"
-                                           aria-describedby="emailHelp"
-                                           placeholder="Email">
+                                <div class="custom-form">
+                                    <small class="form-label">Email*</small>
+                                    <input type="email" class="form-control " onfocus="inputFocus(event)">
                                 </div>
-                                <div class="mb-3 mt-4">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                                <div class="custom-form">
+                                    <small class="form-label">Name</small>
+                                    <input type="text" class="form-control "  onfocus="inputFocus(event)">
                                 </div>
-                                <div class="mb-3 mt-4">
-                                    <textarea class="form-control form-control-lg" rows="4"
-                                              placeholder="Message"></textarea>
+                                <div class="custom-form textarea">
+                                    <textarea class="form-control " placeholder="Message" rows="4"></textarea>
                                 </div>
-                                
-                                <button type="submit" class="btn btn-theme-red btn-lg text-white my-3 w-100">Send
-                                </button>
-                                <div class="alert-notice">This site is protected by reCAPTCHA and the Google <a href="#" class="text-theme">Privacy Policy</a> and
+
+                                <button type="submit" class="btn btn-theme-red  w-100">Send</button>
+                                <br>
+                                <br>
+                                <div class="reCaptcha">This site is protected by reCAPTCHA and the Google <a href="#" class="text-theme">Privacy Policy</a> and
                                     <a href="#" class="text-theme">Terms of Service</a> apply.
                                 </div>
                             </form>
@@ -100,33 +98,63 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="w-100">
-                        <div class="h5 pb-3 py-4">Better yet, see us in person!</div>
-                        <div class="h6 text-black-50 pb-y">We love our partners and potential ones, so we would love to
-                            hear from you!
-                        </div>
+                    <div class="text-section">
+                        <div class="section-des ">Better yet, see us in person!</div>
+                        <div class="default_text">We love our customers, so feel free to visit during normal business hours.</div>
                         
-                        <div class="h5 pb-3 py-4">Medialogy Group</div>
-                        <div class="h6 text-black-50 pb-4">Prince Sultan Road, Jeddah 23526, Saudi Arabia</div>
-                        <a class="text-theme pb-2">contact@medialogygroup.com</a><br>
-                        <a class="text-theme">+966.55 6407488</a>
+                        <div class="section-des">Medialogy Group</div>
+                        <div class="default_text">Prince Sultan Road, Jeddah 23526, Saudi Arabia</div>
+                        <a class="info-link pb-2">contact@medialogygroup.com</a>
+                        <a class="info-link">+966.55 6407488</a>
                         
-                        <div class="h5 pb-3 py-4">Hours</div>
+                        <div class="section-des">Hours</div>
                         <div class="pb-4">
-                            <div class="h6 text-black-50">Mon 09:00 am – 05:00 pm</div>
-                            
-                            <div class="h6 text-black-50"> Tue 09:00 am – 05:00 pm</div>
-                            
-                            <div class="h6 text-black-50"> Wed 09:00 am – 05:00 pm</div>
-                            
-                            <div class="h6 text-black-50"> Thu 09:00 am – 05:00 pm</div>
-                            
-                            <div class="h6 text-muted"> Fri Closed</div>
-                            
-                            <div class="h6 text-black-50"> Sat Closed</div>
-                            
-                            <div class="h6 text-black-50"> Sun 09:00 am – 05:00 pm</div>
-                        
+                            <table class="table table-borderless table-time">
+                                <tbody>
+                                    <tr>
+                                        <td>Mon</td>
+                                        <td>09:00 am</td>
+                                        <td>-</td>
+                                        <td>05:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tue</td>
+                                        <td>09:00 am</td>
+                                        <td>-</td>
+                                        <td>05:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wed</td>
+                                        <td>09:00 am</td>
+                                        <td>-</td>
+                                        <td>05:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thu</td>
+                                        <td>09:00 am</td>
+                                        <td>-</td>
+                                        <td>05:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fri</td>
+                                        <td>Closed</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sat</td>
+                                        <td>Closed</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sun</td>
+                                        <td>09:00 am</td>
+                                        <td>-</td>
+                                        <td>05:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     
                     </div>
@@ -145,28 +173,31 @@
 <!--/main-->
 <!--footer-->
 <footer class="footer">
-    <div class="container">
-        <div class="w-100 d-flex justify-content-between border-top py-4 footer-content">
-            <div class="copyright">Copyright © 2021 Redishketch - All Rights Reserved.</div>
+    <div class="footer-wrap">
+        <hr>
+        <br>
+        <div class="w-100 d-flex justify-content-between   footer-content">
+            <div class="copyright">Copyright © 2021 AKG Dev Team - All Rights Reserved.</div>
             <div class="links">
-                <a href="#" class="pe-2">
+                <a href="#" class="pe-3">
                     <img src="assets/img/facebook-logo.png" alt="">
                 </a>
-                <a href="#" class="pe-2">
+                <a href="#" class="pe-3">
                     <img src="assets/img/twitter.png" alt="">
                 </a>
-                <a href="#" class="pe-2">
+                <a href="#" class="pe-3">
                     <img src="assets/img/instagram.png" alt="">
                 </a>
                 <a href="#">
                     <img src="assets/img/linkedin.png" alt="">
                 </a>
             </div>
-            <div>Powered by redishketch</div>
+            <div>Powered by <a href="javascript:void(0)">AKG Dev Team</a></div>
         </div>
     </div>
 </footer>
 <!--/footer-->
 <script src="assets/js/app.js"></script>
 </body>
+<script src="resouces/js/custom.js"></script>
 </html>

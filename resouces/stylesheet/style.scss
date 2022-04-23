@@ -1,7 +1,25 @@
 *{
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+@import "variables";
+a{
+  transition: all .4s ease;
+  color: $text-default;
+  &:hover{
+    transition: all .4s ease;
+    color: $text-theme;
+  }
+}
+.btn{
+  border-radius: 0!important;
+}
+body{
   font-family: 'Montserrat', sans-serif;
 }
+@import "shared/header";
+@import "shared/footer";
 @import "pages/theme";
 @import "pages/helper";
 @import "pages/home";

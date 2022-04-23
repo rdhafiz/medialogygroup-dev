@@ -1,6 +1,175 @@
 .contact-us{
   margin-top: 100px;
-  .alert-notice{
-    font-size: 13px;
+  .each-section{
+    max-width: 1280px;
+    padding:40px 24px;
+    margin: 0 auto;
+    .transform-title{
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .each-transform{
+      max-width: 365px;
+      margin: 0 auto;
+      .each-transform-title{
+        font-size: 24px;
+        color: rgb(27, 27, 27);
+        font-family: 'Roboto', arial, sans-serif;
+        font-weight: 400;
+        margin-bottom: 24px;
+      }
+      .each-transform-des{
+        font-size: 18px;
+        color: rgb(94, 94, 94);
+        font-family: 'Roboto', arial, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+    }
+    .section-des{
+      font-size: 24px;
+      color: rgb(27, 27, 27);
+      margin-top:30px;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-family: "Roboto",arial,sans-serif;
+    }
+    .form-home{
+      max-width: 592px;
+      margin-left: 0;
+      margin-right: auto;
+      padding-bottom: 24px;
+      .custom-form{
+        border:1px solid rgb(226, 226, 226);
+        background-color: rgb(255, 255, 255);
+        height: 55px;
+        margin-bottom: 24px;
+        text-align: left;
+        overflow: hidden;
+        position: relative;
+        .form-control{
+          box-shadow: none;
+          border-radius: 0!important;
+          font-weight: 400;
+          border: 0!important;
+          padding-bottom: 8px;
+          font-family: 'Roboto', arial, sans-serif;
+          text-transform: none;
+          margin-top: 15px;
+        }
+        .form-label{
+          position: absolute;
+          left: 16px;
+          top: 28%;
+          font-size: 18px;
+          color: rgb(94, 94, 94);
+          font-weight: 400;
+          font-family: 'Roboto', arial, sans-serif;
+          transition: all .2s ease;
+          &.active{
+            transition: all .2s ease;
+            top: 10%;
+            color: $text-theme;
+            font-size: 12px;
+          }
+        }
+        &.textarea{
+          height: 160px;
+          textarea{
+            height: 157px;
+            resize: none;
+            &::placeholder{
+              font-size: 18px;
+              color: rgb(94, 94, 94);
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .btn-theme-red{
+        height: 56px;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 0.063em;
+        color: #fff;
+      }
+    }
+    .btn-theme-red{
+      width: 100%;
+      height: 56px;
+      font-size: 18px;
+    }
+    .reCaptcha{
+      font-size: 13.5px;
+      color: rgb(89, 89, 89);
+      line-height: 1.5;
+      font-family: 'Roboto', arial, sans-serif;
+      font-weight: 400;
+      padding:16px 0 ;
+      a{
+        color: $text-theme;
+        transition: all .2s ease;
+        &:hover{
+          transition: all .2s ease;
+          color: $text-default;
+        }
+      }
+    }
+    .better_yet{
+      margin-top: 40px;
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+    .default_text{
+      font-family: 'Roboto', arial, sans-serif;
+      font-size: 18px;
+      color: rgb(94, 94, 94);
+      margin-bottom: 24px;
+    }
+    .text-section{
+      max-width: 592px;
+      margin-left: auto;
+      margin-right: 0;
+      @media screen and (max-width: 991px){
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+    .info-link{
+      font-size: 18px;
+      display: block;
+      color: $text-theme;
+      font-family: 'Roboto', arial, sans-serif;
+      line-height: 1;
+      cursor: pointer;
+      transition: all .2s ease;
+      &:hover{
+        transition: all .2s ease;
+        color: rgb(126, 42, 30);
+      }
+    }
+    .table-time{
+      max-width: 260px;
+      font-weight: 400;
+      line-height: 1.5;
+      word-break: normal;
+      letter-spacing: normal;
+      text-transform: none;
+      font-family: 'Roboto', arial, sans-serif;
+      font-size: 18px;
+      color: rgb(94, 94, 94);
+      tr{
+        &:last-child{
+          td{
+            font-family: 'Roboto', arial, sans-serif;
+            font-weight: 700;
+            color: rgb(94, 94, 94);
+          }
+        }
+        td{
+          padding:3px 0;
+        }
+      }
+    }
   }
 }

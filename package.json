@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "devDependencies": {
+        "node-sass": "4.5.0"
+    },
     "scripts": {
         "style": "sass --watch resouces/stylesheet/style.scss:assets/css/style.min.css --style compressed"
     },

@@ -1,5 +1,78 @@
 .front-page{
-  width: 100%;
-  height: 90vh;
-  margin-top: 100px;
+  margin-top: 112px;
+  .each-section{
+    max-width: 1280px;
+    padding:40px 24px;
+    margin: 0 auto;
+    .each-section-title{
+      font-family: 'Montserrat', sans-serif;
+      overflow-wrap: break-word;
+      font-size: 24px;
+      color: #fff;
+      line-height: 1.4;
+      text-align: left;
+      font-weight: 600;
+      @media screen and (max-width: 991px){
+        font-size: 18px;
+      }
+    }
+    .each-section-des{
+      font-family: 'Roboto', sans-serif;
+      overflow-wrap: break-word;
+      font-size: 18px;
+      color: #fff;
+      line-height: 1.4;
+      text-align: left;
+      font-weight: 400;
+    }
+    .each-section-title2{
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.4;
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      color: rgb(27, 27, 27);
+      @media screen and (max-width: 991px){
+        font-size: 18px;
+      }
+    }
+    .each-section-des2{
+      overflow-wrap: break-word;
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: rgb(94, 94, 94);
+    }
+    .each-section-title3{
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.4;
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      color: rgb(247, 247, 247);
+      @media screen and (max-width: 991px){
+        font-size: 18px;
+      }
+    }
+    .each-section-des3{
+      overflow-wrap: break-word;
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: rgb(94, 94, 94);
+    }
+    .iframe{
+      margin-top: 50px;
+      min-height: 620px!important;
+      @media screen and (max-width: 991px){
+        min-height: 400px!important;
+      }
+      @media screen and (max-width: 768px){
+        min-height: 300px!important;
+      }
+      @media screen and (max-width: 468px){
+        min-height: 200px!important;
+      }
+    }
+  }
 }
